@@ -10,15 +10,17 @@ function QuestionItem({ question }) {
   ));
 
   return (
-    <li>
-      <h4>Question {id}</h4>
-      <h5>Prompt: {prompt}</h5>
-      <label>
-        Correct Answer:
-        <select defaultValue={correctIndex}>{options}</select>
-      </label>
-      <button>Delete Question</button>
-    </li>
+    <>
+      <li>
+        <h4>Question {id}</h4>
+        <h5>Prompt: {prompt}</h5>
+        <label>
+          Correct Answer:
+          <select defaultValue={correctIndex}>{options}</select>
+        </label>
+        <button>Delete Question</button>
+      </li>
+    </>
   );
 }
 
